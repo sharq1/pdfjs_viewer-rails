@@ -6451,22 +6451,22 @@ var pdfjsWebLibs;
     'https://mozilla.github.io'
    ];
    validateFileURL = function validateFileURL(file) {
-    try {
-     var viewerOrigin = new URL(window.location.href).origin || 'null';
-     if (HOSTED_VIEWER_ORIGINS.indexOf(viewerOrigin) >= 0) {
-      return;
-     }
-     var fileOrigin = new URL(file, window.location.href).origin;
-     if (fileOrigin !== viewerOrigin) {
-      throw new Error('file origin does not match viewer\'s');
-     }
-    } catch (e) {
-     var message = e && e.message;
-     var loadingErrorMessage = mozL10n.get('loading_error', null, 'An error occurred while loading the PDF.');
-     var moreInfo = { message: message };
-     PDFViewerApplication.error(loadingErrorMessage, moreInfo);
-     throw e;
-    }
+//     try {
+//      var viewerOrigin = new URL(window.location.href).origin || 'null';
+//      if (HOSTED_VIEWER_ORIGINS.indexOf(viewerOrigin) >= 0) {
+//       return;
+//      }
+//      var fileOrigin = new URL(file, window.location.href).origin;
+//      if (fileOrigin !== viewerOrigin) {
+//       throw new Error('file origin does not match viewer\'s');
+//      }
+//     } catch (e) {
+//      var message = e && e.message;
+//      var loadingErrorMessage = mozL10n.get('loading_error', null, 'An error occurred while loading the PDF.');
+//      var moreInfo = { message: message };
+//      PDFViewerApplication.error(loadingErrorMessage, moreInfo);
+//      throw e;
+//     }
    };
    function loadAndEnablePDFBug(enabledTabs) {
     return new Promise(function (resolve, reject) {
