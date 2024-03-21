@@ -7,7 +7,12 @@
     display: none;
   }
 
+  // All of the content from full, minus download/print options
   .download {
+    display: none;
+  }
+
+  .print {
     display: none;
   }
 }
