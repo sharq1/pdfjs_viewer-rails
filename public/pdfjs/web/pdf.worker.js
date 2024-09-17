@@ -16631,7 +16631,7 @@ var PartialEvaluator = function PartialEvaluatorClosure() {
     disableFontFace: false,
     nativeImageDecoderSupport: _util.NativeImageDecoding.DECODE,
     ignoreErrors: false,
-    isEvalSupported: true
+    isEvalSupported: false
   };
   function NativeImageDecoder(_ref) {
     var xref = _ref.xref,
